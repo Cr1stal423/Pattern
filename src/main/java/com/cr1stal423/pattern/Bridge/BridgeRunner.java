@@ -2,9 +2,11 @@ package com.cr1stal423.pattern.Bridge;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
+@Profile("bridge")
 public class BridgeRunner implements CommandLineRunner {
 
     private final PaymentService paymentService;
