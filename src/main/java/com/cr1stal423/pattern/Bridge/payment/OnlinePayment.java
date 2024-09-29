@@ -14,9 +14,8 @@ public class OnlinePayment extends Payment {
     @Override
     public void pay(double amount) {
         System.out.println("Online payment initiated.");
-        // Наприклад, обираємо перший PaymentProcessor з колекції
         if (!paymentProcessors.isEmpty()) {
-            paymentProcessors.get(0).processPayment(amount);
+            paymentProcessors.get(1).processPayment(amount);
         }
     }
 

@@ -13,7 +13,6 @@ public class StorePayment extends Payment {
     @Override
     public void pay(double amount) {
         System.out.println("Store payment initiated.");
-        // Наприклад, обираємо перший PaymentProcessor з колекції
         if (!paymentProcessors.isEmpty()) {
             paymentProcessors.get(0).processPayment(amount);
         }
